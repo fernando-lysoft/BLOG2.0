@@ -136,7 +136,7 @@ header.abajo > .navigation > ul > li > ul> li> a {
 
  .hero{
     min-height: 100vh;
-    background-image: url("img/inicio3.jpg");
+    background-image: url("img/inicio.webp");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
