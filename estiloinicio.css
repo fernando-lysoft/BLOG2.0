@@ -193,10 +193,30 @@ header.abajo > .navigation > ul > li > ul> li> a {
     display: flex;
     align-items: center;
     justify-content: center; /* Centra el logo horizontalmente */
-    margin-bottom: 1rem; /* Agrega un margen inferior al logo */
+    margin-bottom: 16px; /* Agrega un margen inferior al logo */
+    margin-top: 16px; /* Mueve el logo un poco más abajo */
 }
 .logo-container img {
     width: 7%; /* Ajusta el ancho de la imagen */
     height: auto; /* Ajusta la altura de la imagen para que se mantenga la relación de aspecto */
+}
+.descripcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra verticalmente el parrafo */
+}
+
+.descripcion p {
+    align-self: center; /* Centra horizontalmente el parrafo */
+    text-align: center; /* Centra el texto horizontalmente */
+    line-height: 1.5; /* Agrega espacio entre lineas */
+    width: 50%; /* Establece un ancho máximo para el parrafo */
+    margin-top: 10px; /* Agrega un margen superior al parrafo */
+}
+
+.descripcion span {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 1rem; /* Agrega un margen superior al span */
 }
 
