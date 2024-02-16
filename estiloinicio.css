@@ -95,7 +95,25 @@ header{
     width: 45px;
     height: 35px;
 }
-
+@media only screen and (max-width: 600px) {
+  .logo {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: -50px; /* Elimina este margen */
+  }
+  
+  .logo img {
+    width: 80px;
+    height: auto;
+    margin-right: -15px;
+  }
+  
+  .logo span {
+    margin: 0;
+    white-space: nowrap;
+  }
+}
 @media (max-width: 950px){
     .header label{
         display: initial;
@@ -135,6 +153,8 @@ header{
     }	
  }
 
+
+ 
  header.abajo,
 header.abajo * {
     background-color: #ffffff;
@@ -204,6 +224,7 @@ header.abajo > .navigation > ul > li > ul> li> a {
     display: flex;
     flex-direction: column;
     align-items: center; /* Centra verticalmente el parrafo */
+    background-color: #e0dfdf;
 }
 
 .descripcion p {
@@ -218,6 +239,28 @@ header.abajo > .navigation > ul > li > ul> li> a {
 .descripcion span {
     font-size: 30px;
     font-weight: bold;
-    margin-top: 1rem; /* Agrega un margen superior al span */
+    margin-top: 16px; /* Agrega un margen superior al span */
 }
 
+/*REDEDS*/
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .redes-sociales a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background-color: #b8b3b3;
+    border-radius: 50%;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  
+  
