@@ -1,0 +1,208 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    margin-right: -5px;
+}
+
+.logo span {
+    line-height: 60px;
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+
+header{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    padding: 0px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.logo{
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+}
+.navigation ul{
+    list-style: none;
+}
+.header .navigation ul li{
+    float: left;
+    position: relative;
+}
+.header .navigation ul li a{
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    transition: all .2s ease;
+}
+.header .navigation ul li a:hover{
+    background-color: #e4e2e2;
+}
+
+.header .navigation ul li ul{
+    position: absolute;
+    width: 300px;
+    background-color: rgba(1, 1, 1, 0.7);
+    display: none;
+    margin-left: 0px;
+}
+.header .navigation ul li ul li a{
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.header .navigation ul li ul li ul{
+    position: absolute;
+    top: 0;
+    right: 300px;
+}
+.header .navigation ul li ul li{
+    width: 100%;
+}
+.header .navigation ul li:hover > ul{
+    display: initial;  
+}
+
+#toggle,
+.header label{
+    display: none;
+    cursor: pointer;
+}
+.menu{
+    width: 45px;
+    height: 35px;
+}
+@media only screen and (max-width: 600px) {
+  .logo {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: -30px; 
+  }
+  
+  .logo img {
+    width: 80px;
+    height: auto;
+    margin-right: -15px;
+  }
+  
+  .logo span {
+    margin: 0;
+    white-space: nowrap;
+  }
+}
+@media (max-width: 950px){
+
+    .header label{
+        display: initial;
+    }
+    .header{
+        padding: 20px 10%;
+    }
+    .header .navigation{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: none;
+    }
+    .header .navigation ul li{
+        width: 100%;
+
+    }
+    .header .navigation ul li a{
+        padding: 8px, 30px, 8px, 10%;
+    }
+    .header .navigation ul li ul{
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+    .header .navigation ul li ul li{
+        background-color: rgba(1, 1, 1, 0.7);
+    }
+    .header .navigation ul li ul li ul{
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+    #toggle:checked ~ .navigation{
+        display: block;
+    }	
+ }
+
+
+ 
+ header.abajo,
+header.abajo * {
+    background-color: #ffffff;
+}
+
+header.abajo .logo,
+header.abajo ul li a {
+    color: #000000;
+}
+header.abajo > .navigation > ul > li > a {
+    color: #000000;
+}
+header.abajo > .navigation > ul > li > ul> li> a {
+    color: #000000;
+}
+
+/*INICIO*/
+
+ .hero{
+    min-height: 100vh;
+    background-image: url("img/inicio.webp");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .hero p {
+    font-size: 2em;
+    font-family: 'Your Font Name', sans-serif;
+    text-align: center;
+    padding-top: 65vh;
+    color: white; 
+    margin: 0; 
+    line-height: 1.5; /*  propiedad para aumentar el espacio entre líneas */
+    width: 30%; /* propiedad para darle un ancho fijo al elemento <p> */
+    position: absolute;
+    left: 50%; /*  propiedad para centrar el elemento <p> horizontalmente */
+    transform: translateX(-50%); /*  propiedad para centrar el elemento <p> verticalmente */
+    display: flex; /*  propiedad para centrar el texto verticalmente */
+    align-items: center; /* propiedad para centrar el texto verticalmente */
+    flex-wrap: wrap; /* propiedad para que el texto se divida en tres líneas */
+    font-weight: bold;
+}
+
+@media (max-width: 767px) {
+    .hero p {
+        font-size: 1.5em;
+        width: 100%;
+        height: 4.5em;
+    }
+}
