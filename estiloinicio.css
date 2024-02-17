@@ -100,7 +100,7 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    margin-left: -50px; /* Elimina este margen */
+    margin-left: -30px; /* Elimina este margen */
   }
   
   .logo img {
@@ -115,6 +115,7 @@ header{
   }
 }
 @media (max-width: 950px){
+
     .header label{
         display: initial;
     }
@@ -209,6 +210,8 @@ header.abajo > .navigation > ul > li > ul> li> a {
     }
 }
 
+
+
 .logo-container {
     display: flex;
     align-items: center;
@@ -262,5 +265,101 @@ header.abajo > .navigation > ul > li > ul> li> a {
     text-decoration: none;
     font-size: 25px;
   }
+
+  @media (max-width: 480px) {
+    .logo-container img {
+        width: 30%; 
+    }
+
+    .descripcion p {
+        width: 100%; 
+        font-size: 16px; 
+    }
+
+    .descripcion span {
+        font-size: 25px; 
+    }
+
+    .redes-sociales a {
+        width: 50px; 
+        height: 50px; 
+        font-size: 20px; 
+    }
+}
+/*CONTAINER*/
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
   
-  
+  .container h1 {
+    margin-top: 50px;
+    font-size: 36px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #3b3b3b;
+  }
+  .container p {
+    align-self: center; /* Centra horizontalmente el parrafo */
+    text-align: center; /* Centra el texto horizontalmente */
+    line-height: 1.5; /* Agrega espacio entre lineas */
+    width: 50%; /* Establece un ancho máximo para el parrafo */
+    margin-top: 40px; /* Agrega un margen superior al parrafo */
+    font-size: 18px;
+  }
+  @media (max-width: 480px) {
+    .container p {
+      width: 95%; /* Ocupa todo el ancho de la pantalla */
+    }
+  }
+
+/*IMAGENES COSTA SIERRA Y SELVA*/
+.guides {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.guide {
+    text-align: center;
+    position: relative;
+}
+.guide h2 {
+    position: absolute; /* Posiciona el <h2> como absoluto */
+    top: -20px; /* Mueve el <h2> hacia arriba */
+    left: 50%; /* Centra el <h2> horizontalmente */
+    transform: translateX(-50%); /* Centra el <h2> horizontalmente utilizando transform */
+    background-color: white; /* Agrega un fondo blanco al <h2> */
+    padding: 5px; /* Agrega un poco de relleno al <h2> */
+    border-radius: 15px 15px 0 0; /* Agrega bordes redondeados al <h2> */
+    cursor: pointer;
+}
+.guide-image {
+    max-width: 90%;
+    height: auto;
+    cursor: pointer;
+}
+.guide.costa img {
+    width: 600px;
+    height: auto;
+}
+.guide.sierra img {
+    width: 600px;
+    height: auto;
+}
+.guide.selva img {
+    width: 680px;
+    height: auto;
+}
+h2 {
+    margin-top: 0;
+}
+@media (max-width: 767px) {
+    .guides {
+      flex-direction: column;
+    }
+    .guide {
+      margin-top: 20px;
+    }
+  }
