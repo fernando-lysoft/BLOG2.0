@@ -22,7 +22,7 @@
 
 .logo span {
     line-height: 60px;
-    font-size: 1.5em;
+    font-size: 40px;
     vertical-align: middle;
 }
 
@@ -65,7 +65,7 @@ header{
 .header .navigation ul li ul{
     position: absolute;
     right: 0;
-    width: 300px;
+    width: 250px;
     background-color: rgba(1, 1, 1, 0.7);
     display: none;
 

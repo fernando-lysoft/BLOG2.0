@@ -22,13 +22,14 @@
     line-height: 60px;
     font-size: 1.5em;
     vertical-align: middle;
+    font-family:'Times New Roman';
 }
-
 header{
     position: fixed;
     top:0;
     left: 0;
     right: 0;
+    background-color: rgba(1, 1, 1, 0.7);
     padding: 0px 10%;
     display: flex;
     align-items: center;
@@ -46,8 +47,10 @@ header{
 }
 .header .navigation ul li{
     float: left;
+    right: 17px;
     position: relative;
 }
+
 .header .navigation ul li a{
     font-size: 18px;
     color: #ffffff;
@@ -59,13 +62,13 @@ header{
 .header .navigation ul li a:hover{
     background-color: #e4e2e2;
 }
-
 .header .navigation ul li ul{
     position: absolute;
-    width: 300px;
+    right: 0px;
+    width: 250px;
     background-color: rgba(1, 1, 1, 0.7);
     display: none;
-    margin-left: 0px;
+
 }
 .header .navigation ul li ul li a{
     font-size: 15px;
@@ -80,7 +83,7 @@ header{
     width: 100%;
 }
 .header .navigation ul li:hover > ul{
-    display: initial;  
+    display: initial;
 }
 
 #toggle,
@@ -151,8 +154,6 @@ header{
     }	
  }
 
-
- 
  header.abajo,
 header.abajo * {
     background-color: #ffffff;
@@ -171,38 +172,3 @@ header.abajo > .navigation > ul > li > ul> li> a {
 
 /*INICIO*/
 
- .hero{
-    min-height: 100vh;
-    background-image: url("img/inicio.webp");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
- }
- .hero p {
-    font-size: 2em;
-    font-family: 'Your Font Name', sans-serif;
-    text-align: center;
-    padding-top: 65vh;
-    color: white; 
-    margin: 0; 
-    line-height: 1.5; /*  propiedad para aumentar el espacio entre líneas */
-    width: 30%; /* propiedad para darle un ancho fijo al elemento <p> */
-    position: absolute;
-    left: 50%; /*  propiedad para centrar el elemento <p> horizontalmente */
-    transform: translateX(-50%); /*  propiedad para centrar el elemento <p> verticalmente */
-    display: flex; /*  propiedad para centrar el texto verticalmente */
-    align-items: center; /* propiedad para centrar el texto verticalmente */
-    flex-wrap: wrap; /* propiedad para que el texto se divida en tres líneas */
-    font-weight: bold;
-}
-
-@media (max-width: 767px) {
-    .hero p {
-        font-size: 1.5em;
-        width: 100%;
-        height: 4.5em;
-    }
-}
