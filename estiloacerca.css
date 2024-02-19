@@ -244,14 +244,14 @@ header.abajo > .navigation > ul > li > ul> li> a {
   }
 
   /*SECCION CARDS*/
-@gray-darker:               #444444;
+/*@gray-darker:               #444444;
 @gray-dark:                 #696969;
 @gray:                      #999999;
 @gray-light:                #cccccc;
 @gray-lighter:              #ececec;
-@gray-lightest:             lighten(@gray-lighter,4%);
+@gray-lightest:             lighten(@gray-lighter,4%);*/
 
-*,
+/**,
 *::before,
 *::after { 
   box-sizing: border-box;
@@ -273,7 +273,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -moz-font-feature-settings: "liga" on;
 }
-
+*/
 
 
 img {
@@ -302,6 +302,8 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .cards__item {
@@ -359,20 +361,20 @@ img {
   }
 }
 
-.card__image--flowers {
+/*.card__image--flowers {
   background-image: url(https://unsplash.it/800/600?image=82);
-}
+}*/
 
 .card__image--river {
-  background-image: url(https://unsplash.it/800/600?image=11);
+  background-image: url("img/ferviajes.jpg");
 }
 
 .card__image--record {
-  background-image: url(https://unsplash.it/800/600?image=39);
+  background-image: url("img/blog.jpg");
 }
 
 .card__image--fence {
-  background-image: url(https://unsplash.it/800/600?image=59);
+  background-image: url("img/quiensoy.webp");
 }
 
 .card__title {
@@ -388,4 +390,60 @@ img {
   font-size: 0.875rem;
   line-height: 1.5;
   margin-bottom: 1.25rem;
+}
+
+
+/*PIE DE PAGINA*/
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-link {
+  color: #fff;
+  margin-right: 10px;
+}
+.footer p{
+  font-size: 17px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 0;
+}
+.iconos-sociales {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  transform: translateY(10px);
+}
+.iconos-sociales i {
+  font-size: 30px;
+  color:#fff;
+  margin-right: 20px; 
+}
+.divide {
+  display: inline-block;
+  margin: 0 10px;
+  line-height: 1.5;
+  vertical-align: middle;
+}
+.Politicas{
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding: 10px 0;
+  }
+  .footer-link {
+    display: block;
+    margin: 5px 0;
+  }
+  .Politicas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Politicas a {
+    margin-left: 7px;
+  }
 }
