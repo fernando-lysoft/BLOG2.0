@@ -100,7 +100,7 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    margin-left: -30px; 
+    margin-left: -35px; 
   }
   
   .logo img {
@@ -184,11 +184,12 @@ header.abajo > .navigation > ul > li > ul> li> a {
     align-items: center;
     justify-content: center;
  }
+ 
  .hero p {
-    font-size: 2em;
+    font-size: 40px;
     font-family: 'Your Font Name', sans-serif;
     text-align: center;
-    padding-top: 50vh;
+    padding-top: 40vh;
     color: white; 
     margin: 0; 
     line-height: 1.5; /*  propiedad para aumentar el espacio entre líneas */
@@ -316,9 +317,7 @@ header.abajo > .navigation > ul > li > ul> li> a {
   }
 
 /*IMAGENES COSTA SIERRA Y SELVA*/
-* {
-    font-family: arial;
-  }
+
   
   .contenedor {
       position: relative;
@@ -326,27 +325,28 @@ header.abajo > .navigation > ul > li > ul> li> a {
       margin: 0 auto;
       transition: all 0.3s ease-out;
       margin-top: 50px;
-      margin-bottom: 20px;
+      margin-bottom: 50px;
       display: block;
   }
   
   .contenedor-cards {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      flex-wrap: wrap;    
   }
   
   .contenedor-cards .contenedor-card-item {
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      -o-box-sizing: border-box;
-      width: 25%;
-      margin: 1%;
+      -webkit-boxsizing: border-box;
+      -moz-boxsizing: border-box;
+      -o-boxsizing: border-box;
+      width: 30%;
+      margin: -1% -1%;
       -webkit-transition: all 0.3s ease-out;
       -o-transition: all 0.3s ease-out;
       transition: all 0.3s ease-out;
       border-radius: 5px;
       cursor: help;
+      margin-left: 30px;
+  
   }
   
   .contenedor-cards .contenedor-card-item:hover {
@@ -361,7 +361,7 @@ header.abajo > .navigation > ul > li > ul> li> a {
       overflow: hidden;
       position: relative !important;
       background: #3E2723;
-      border-radius: 5px;
+      border-radius: 5px;    
   }
   
   .contenedor-card-item img {
@@ -403,13 +403,13 @@ header.abajo > .navigation > ul > li > ul> li> a {
   
   .contenedor-card-item .contenedor-info .info .titulo {
     margin: 0;
-    font-size: 20px;
+    font-size: 30px;
   }
   
-  .contenedor-card-item .contenedor-info .info .categoria {
+  /*.contenedor-card-item .contenedor-info .info .categoria {
       display: block;
       font-size: 10px;
-  }
+  }*/
   
   .contenedor-card-item:hover .contenedor-info {
       bottom: 0;
@@ -508,6 +508,9 @@ header.abajo > .navigation > ul > li > ul> li> a {
     .footer-link {
       display: block;
       margin: 5px 0;
+    }
+    .iconos-sociales{
+        margin-left: 30px;
     }
     .Politicas {
       display: flex;
