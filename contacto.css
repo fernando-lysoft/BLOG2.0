@@ -1,0 +1,356 @@
+/*BARRA DE MENU*/
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    margin-right: -5px;
+}
+
+.logo span {
+    line-height: 60px;
+    font-size: 40px;
+    vertical-align: middle;
+}
+
+header{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    padding: 0px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.logo{
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+}
+.navigation ul{
+    list-style: none;
+}
+.header .navigation ul li{
+    float: left;
+    position: relative;
+}
+
+.header .navigation ul li a{
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    transition: all .2s ease;
+}
+.header .navigation ul li a:hover{
+    background-color: #e4e2e2;
+}
+.header .navigation ul li ul{
+    position: absolute;
+    right: 0;
+    width: 250px;
+    background-color: rgba(1, 1, 1, 0.7);
+    display: none;
+
+}
+.header .navigation ul li ul li a{
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.header .navigation ul li ul li ul{
+    position: absolute;
+    top: 0;
+    right: 300px;
+}
+.header .navigation ul li ul li{
+    width: 100%;
+}
+.header .navigation ul li:hover > ul{
+    display: initial;
+}
+
+#toggle,
+.header label{
+    display: none;
+    cursor: pointer;
+}
+.menu{
+    width: 45px;
+    height: 35px;
+}
+@media only screen and (max-width: 600px) {
+  .logo {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: -35px; 
+  }
+  
+  .logo img {
+    width: 80px;
+    height: auto;
+    margin-right: -15px;
+  }
+  
+  .logo span {
+    margin: 0;
+    white-space: nowrap;
+  }
+}
+@media (max-width: 950px){
+    .menu{
+        /*padding-left: 0;*/
+        margin-right: -18px;
+       /* margin-left: 20px;*/
+        padding-left: 11px;
+        padding-right:-25px ;
+        max-width: 50px;
+    }
+    .header label{
+        display: initial;
+    }
+    .header{
+        padding: 20px 10%;
+    }
+    .header .navigation{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: none;
+    }
+    .header .navigation ul li{
+        width: 100%;
+
+    }
+    .header .navigation ul li a{
+        padding: 8px, 30px, 8px, 10%;
+    }
+    .header .navigation ul li ul{
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+    .header .navigation ul li ul li{
+        background-color: rgba(1, 1, 1, 0.7);
+    }
+    .header .navigation ul li ul li ul{
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+    #toggle:checked ~ .navigation{
+        display: block;
+    }	
+ }
+
+
+ 
+ header.abajo,
+header.abajo * {
+    background-color: #ffffff;
+}
+
+header.abajo .logo,
+header.abajo ul li a {
+    color: #000000;
+}
+header.abajo > .navigation > ul > li > a {
+    color: #000000;
+}
+header.abajo > .navigation > ul > li > ul> li> a {
+    color: #000000;
+}
+/*IMAGEN DE FONDO */
+.hero{
+    min-height: 100vh;
+    background-image: url("img/contacto.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*display: flex;*/
+    align-items: center;
+    /*justify-content: center;*/
+    background-blend-mode: multiply;
+    background-color: rgba(136, 136, 136, 0.5); /* Agrega una capa de color de fondo negro semi-transparente */
+    padding: 3em;
+ }
+
+ /*FORMULARIO*/
+ 
+*, 
+*:before, 
+*:after {
+ box-sizing:border-box; 
+}
+
+/*html, body {
+  background: #f1f1f1;
+  font-family: 'Merriweather', sans-serif;
+  padding: 1em;
+}*/
+
+h1 {
+   padding-top: 10%;
+   text-align: center;
+   color: #747373;
+   text-shadow: 1px 1px 0 rgba(white, 1);
+}
+
+form {
+   /*padding-top: 5%;*/
+   max-width: 1000px;
+   text-align: center;
+   margin: 20px auto;
+  }
+  /*input[type="text"], input[type="email"],input[type="submit"],
+button {
+  font-size: 20px; /* aumenta el tamaño del texto 
+}*/
+  form input, textarea {
+     border:0; outline:0;
+     padding: 20px;
+     border-radius:8px;
+     display: block;
+     width: 100%;
+     margin-top: 30px;
+     font-family: 'Merriweather', sans-serif;
+     box-shadow: 0 1px 1px rgba(black, 0.1);
+     resize: none;
+  }
+    form input:focus,
+    form textarea:focus {
+       box-shadow: 0 0px 2px rgba(231, 76, 60, 1) !important;
+     }
+  
+  #input-submit {
+     color: white; 
+     background: rgb(235, 43, 43);
+     cursor: pointer;
+     max-width: 50%;
+  } 
+    #input-submit:hover {
+        box-shadow: 0 1px 1px 1px rgba(#aaa, 0.6); 
+    }
+  
+  
+  textarea {
+      height: 126px;
+  }
+
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+.right { width: 50%; }
+
+.left {
+     margin-right: 2%; 
+}
+
+
+@media (max-width: 720px) {
+    /*.hero{
+        min-height: 85vh;
+    }*/
+    .hero h1{
+        padding-top: 100px;
+    }
+  .half {
+     width: 100%; 
+     float: none;
+     margin-bottom: 0; 
+  }
+}
+
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+ /*PIE DE PAGINA*/
+ .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .footer-link {
+    color: #fff;
+    margin-right: 10px;
+  }
+  .footer p{
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 0;
+  }
+  .iconos-sociales {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    transform: translateY(10px);
+  }
+  .iconos-sociales i {
+    font-size: 30px;
+    color:#fff;
+    margin-right: 20px; 
+  }
+  .divide {
+    display: inline-block;
+    margin: 0 10px;
+    line-height: 1.5;
+    vertical-align: middle;
+  }
+  .Politicas{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif
+  }
+  
+  @media (max-width: 767px) {
+    .footer p{
+        margin: 10px ;
+    }
+    .footer {
+      padding: 10px 0;
+    }
+    .footer-link {
+      display: block;
+      margin: 5px 0;
+    }
+    .iconos-sociales{
+      margin-left: 30px;
+  }
+    .Politicas {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .Politicas a {
+      margin-left: 7px;
+    }
+  }

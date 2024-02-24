@@ -23,16 +23,3 @@ document.addEventListener('DOMContentLoaded', () => {
     parrafo.classList.add('hero h1');
   });
 
-
-  window.onload = function() {
-    var toggle = document.getElementById('toggle');
-    var navigation = document.querySelector('.navigation');
-
-    toggle.addEventListener('change', function() {
-        if (toggle.checked) {
-            navigation.style.display = 'block';
-        } else {
-            navigation.style.display = 'none';
-        }
-    });
-};

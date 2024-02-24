@@ -92,7 +92,7 @@ header{
     cursor: pointer;
 }
 .menu{
-    width: 45px;
+    width: 40px;
     height: 35px;
 }
 @media only screen and (max-width: 600px) {
@@ -114,8 +114,15 @@ header{
     white-space: nowrap;
   }
 }
-@media (max-width: 600px){
-
+@media (max-width: 950px){
+  .menu{
+    /*padding-left: 0;*/
+    margin-right: -18px;
+   /* margin-left: 20px;*/
+    padding-left: 11px;
+    padding-right:-25px ;
+    max-width: 50px;
+}
     .header label{
         display: initial;
     }
@@ -183,18 +190,31 @@ header.abajo > .navigation > ul > li > ul> li> a {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-blend-mode: multiply;
+    background-color: rgba(189, 189, 189, 0.5); /* Agrega una capa de color de fondo negro semi-transparente */
  }
  
  /*CSS para la animación de aparición de p con javascript*/
  .fade-in {
     opacity: 0;
     animation: fade-in 2s forwards;
+    /*animation: slide-up 1s ease-out forwards;*/
   }
   
   @keyframes fade-in {
     from { opacity: 0; }
     to   { opacity: 1; }
   }
+  /*@keyframes slide-up {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }*/
  /*------------------------*/
  .hero p {
     font-size: 45px;
@@ -204,11 +224,11 @@ header.abajo > .navigation > ul > li > ul> li> a {
     color: rgb(255, 255, 255); 
     margin: 0; 
     line-height: 1.5; /*  propiedad para aumentar el espacio entre líneas */
-    width: 30%; /* propiedad para darle un ancho fijo al elemento <p> */
+    width: 50%; /* propiedad para darle un ancho fijo al elemento <p> */
     position: absolute;
-    left: 50%; /*  propiedad para centrar el elemento <p> horizontalmente */
+    left: 50%;  /*propiedad para centrar el elemento <p> horizontalmente */
     transform: translateX(-50%); /*  propiedad para centrar el elemento <p> verticalmente */
-    display: flex; /*  propiedad para centrar el texto verticalmente */
+    /*display: flex;   propiedad para centrar el texto verticalmente */
     align-items: center; /* propiedad para centrar el texto verticalmente */
     /*flex-wrap: wrap;  propiedad para que el texto se divida en tres líneas */
     font-weight: bold;
@@ -217,8 +237,9 @@ header.abajo > .navigation > ul > li > ul> li> a {
 @media (max-width: 767px) {
     .hero p {
         font-size: 1.5em;
-        width: 100%;
+        width: 90%;
         height: 4.5em;
+        /*margin-left: -28%;*/
     }
     .hero{
         min-height: 65vh;
@@ -353,13 +374,13 @@ header.abajo > .navigation > ul > li > ul> li> a {
       -moz-boxsizing: border-box;
       -o-boxsizing: border-box;
       width: 30%;
-      margin: -1% -1%;
+      margin: -2% -2%;
       -webkit-transition: all 0.3s ease-out;
       -o-transition: all 0.3s ease-out;
       transition: all 0.3s ease-out;
       border-radius: 5px;
     /*  cursor: pointer;*/
-      margin-left: 30px;
+      margin-left: 40px;
   
   }
   
@@ -420,10 +441,10 @@ header.abajo > .navigation > ul > li > ul> li> a {
     font-size: 30px;
   }
   
-  /*.contenedor-card-item .contenedor-info .info .categoria {
+  .contenedor-card-item .contenedor-info .info .categoria {
       display: block;
       font-size: 10px;
-  }*/
+  }
   
   .contenedor-card-item:hover .contenedor-info {
       bottom: 0;
