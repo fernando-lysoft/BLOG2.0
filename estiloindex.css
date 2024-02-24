@@ -92,7 +92,7 @@ header{
     cursor: pointer;
 }
 .menu{
-    width: 40px;
+    width: 35px;
     height: 35px;
 }
 @media only screen and (max-width: 600px) {
@@ -374,14 +374,15 @@ header.abajo > .navigation > ul > li > ul> li> a {
       -moz-boxsizing: border-box;
       -o-boxsizing: border-box;
       width: 30%;
-      margin: -2% -2%;
+      /*margin: -1% -1%;*/
+      margin-right: 2%;
+      margin-left: 2%;
       -webkit-transition: all 0.3s ease-out;
       -o-transition: all 0.3s ease-out;
       transition: all 0.3s ease-out;
       border-radius: 5px;
     /*  cursor: pointer;*/
-      margin-left: 40px;
-  
+    margin-right: 10px;
   }
   
   .contenedor-cards .contenedor-card-item:hover {
@@ -505,6 +506,7 @@ header.abajo > .navigation > ul > li > ul> li> a {
           width: 100%;
       }
   }
+  
   /*PIE DE PAGINA*/
   .footer {
     background-color: #333;
